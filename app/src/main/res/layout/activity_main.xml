@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ImageView -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center" />
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender" />
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <!-- Country Dropdown -->
+        <Spinner
+            android:id="@+id/countrySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- City Autocomplete -->
+        <AutoCompleteTextView
+            android:id="@+id/cityAutoComplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City" />
+
+        <!-- Terms and Conditions -->
+        <CheckBox
+            android:id="@+id/termsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to terms and condition" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>
